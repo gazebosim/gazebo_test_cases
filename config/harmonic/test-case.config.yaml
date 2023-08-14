@@ -1,0 +1,54 @@
+generation: 1
+translation_map:
+  jammy: 'Ubuntu Jammy'
+  installType: 'Install type'
+  fastdds: 'FastDDS'
+  dds: 'DDS vendor'
+sets:
+  # Makes everything but install files and READMEs
+  - filters:
+      - isMatch: true
+        labels:
+          - harmonic
+      - isMatch: false
+        name: install
+      - isMatch: false
+        name: README
+    dimensions:
+      os:
+        - Ubuntu Focal
+        - Ubuntu Jammy
+      buildType:
+        - Binary
+  # Makes the READMEs only once
+  - filters:
+      - isMatch: true
+        labels:
+          - harmonic
+      - isMatch: false
+        name: install
+      - isMatch: true
+        name: README
+    dimensions:
+      os:
+        - Ubuntu Focal
+      buildType:
+        - Binary
+  #####################
+  # INSTALL FROM BINARIES
+  #####################
+  # Install on Ubuntu from binaries
+  - filters:
+      - isMatch: true
+        labels:
+          - harmonic
+      - isMatch: true
+        name: ubuntu
+      - isMatch: false
+        name: src
+    dimensions:
+      os:
+        - Ubuntu Focal
+        - Ubuntu Jammy
+      buildType:
+        - Binary
