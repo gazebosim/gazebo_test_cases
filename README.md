@@ -10,12 +10,10 @@ The [Issues](https://github.com/gazebosim/gazebo_test_cases/issues) page has sev
 Each ticket will have the following sections:
 
 1. **Setup**: Details on the desired hardware and software setup for this test. The following combinations are possible.
-   1. DDS vendor: `FASTDDS`
-   2. BuildType: 
-      * `binary`: pre-built packaged Gazebo workspace from [the releases page]()
-      * `debian`: pre-built debian packages from the apt repository
+   1. BuildType: 
+      * `binary`: pre-built debian packages from the apt repository
       * `source`: building your own workspace from source
-   3. Os: `Ubuntu Jammy`, `Windows` and `MacOS`
+   2. Os: `Ubuntu Jammy`, `Windows` and `MacOS`
 2. **Links**: Any relevant references for this test.
 3. **Checks**: A list of functionalities to validate.
 
@@ -30,11 +28,6 @@ If you have the necessary permission, go ahead and close the ticket by clicking 
 
 **Encountered failures?**
 If one or more checks fail, please provide the error message in a codeblock comment or as a gist file attachment.
-
-## What to prioritize?
-The goal is to close all tickets after successful validation. But we would like to prioritize the following sets in order:
-
-> **Note**: If you have access to a `Windows` machine, please prioritize testing on `Windows`. The next priority is `MacOS` followed by `Ubuntu Jammy`.
 
 ## What if I want to test something else?
 If you would like to test the functionality of any other package or extend the capabilities tested above, please open additional tickets while following the format described above.
