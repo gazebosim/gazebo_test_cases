@@ -54,4 +54,76 @@ We are expecting to generate all the issues for this tutorial party in two batch
 
 ### Tickets filtered by Setup
 
-TODO
+- [ ] [Ubuntu Jammy, Binary](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22)
+
+  <details><summary>Labels</summary>
+
+  - [ ] [docs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22docs%22)
+  - [ ] [harmonic](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22harmonic%22)
+  - [ ] [gz-common](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-common%22)
+  - [ ] [gz-fuel-tools](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-fuel-tools%22)
+  - [ ] [gz-gui](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-gui%22)
+  - [ ] [gz-launch](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-launch%22)
+  - [ ] [gz-math](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-math%22)
+  - [ ] [gz-msgs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-msgs%22)
+  - [ ] [gz-physics](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-physics%22)
+  - [ ] [gz-plugin](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-plugin%22)
+  - [ ] [gz-rendering](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-rendering%22)
+  - [ ] [gz-sensors](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-sensors%22)
+  - [ ] [gz-sim](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-sim%22)
+  - [ ] [gz-tools](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-tools%22)
+  - [ ] [gz-transport](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-transport%22)
+  - [ ] [gz-utils](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-utils%22)
+  - [ ] [sdf_tutorials](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdf_tutorials%22)
+  - [ ] [sdformat](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdformat%22)
+  - [ ] [sdf worlds](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdf%20worlds%22)
+
+  </details>
+- [ ] [Ubuntu Jammy, Source](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22)
+
+  <details><summary>Labels</summary>
+
+  - [ ] [docs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22docs%22)
+  - [ ] [harmonic](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22harmonic%22)
+  - [ ] [gz-common](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-common%22)
+  - [ ] [gz-fuel-tools](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-fuel-tools%22)
+  - [ ] [gz-gui](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-gui%22)
+  - [ ] [gz-launch](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-launch%22)
+  - [ ] [gz-math](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-math%22)
+  - [ ] [gz-msgs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-msgs%22)
+  - [ ] [gz-physics](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-physics%22)
+  - [ ] [gz-plugin](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-plugin%22)
+  - [ ] [gz-rendering](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-rendering%22)
+  - [ ] [gz-sensors](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-sensors%22)
+  - [ ] [gz-sim](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-sim%22)
+  - [ ] [gz-tools](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-tools%22)
+  - [ ] [gz-transport](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-transport%22)
+  - [ ] [gz-utils](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-utils%22)
+  - [ ] [sdf_tutorials](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22sdf_tutorials%22)
+  - [ ] [sdformat](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Jammy%22+label:%22Source%22+label:%22generation-1%22+label:%22sdformat%22)
+
+  </details>
+- [ ] [MacOS, Source](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22)
+
+  <details><summary>Labels</summary>
+
+  - [ ] [docs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22+label:%22docs%22)
+  - [ ] [harmonic](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22+label:%22harmonic%22)
+
+  </details>
+- [ ] [MacOS, Binary](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22)
+
+  <details><summary>Labels</summary>
+
+  - [ ] [docs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22+label:%22docs%22)
+  - [ ] [harmonic](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22+label:%22harmonic%22)
+
+  </details>
+- [ ] [Windows, Binary](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Binary%22+label:%22generation-1%22)
+
+  <details><summary>Labels</summary>
+
+  - [ ] [docs](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Binary%22+label:%22generation-1%22+label:%22docs%22)
+  - [ ] [harmonic](https://github.com/Voldivh/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Binary%22+label:%22generation-1%22+label:%22harmonic%22)
+
+  </details>
