@@ -33,7 +33,7 @@ If one or more checks fail, please provide the error message in a codeblock comm
 If you would like to test the functionality of any other package or extend the capabilities tested above, please open additional tickets while following the format described above.
 
 ## Questions
-Questions related to testing may be posted as a new [Issue](https://github.com/gazebosim/gazebo_test_cases/issues). Kindly ensure to link the relevant issue ticket when starting a new discussion.
+Questions related to testing may be posted on the [Discussions](https://github.com/gazebosim/gazebo_test_cases/discussions) board. Kindly ensure to link the relevant issue ticket when starting a new discussion.
 
 ## Timeline
 We are expecting to generate all the issues for this tutorial party in two batches to ensure that we validate the test cases with a higher priority. The batches will release in the following order:
