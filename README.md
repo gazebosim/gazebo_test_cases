@@ -121,4 +121,14 @@ We are expecting to generate all the issues for this tutorial party in two batch
 
   </details>
 
+- [ ] [SDFormat Example Worlds](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22sdf%20worlds%22+label:%22generation-1%22)
+
+
+
+---
+
+Here are some things to know about Github search:
+- You can filter available results with a label by typing `label:my-label`. And it works for multiple labels: `label:my-label-1 label:my-label-2`.
+- If your label has a space in it, you can put the label in quotes: `label:"my label"`.
+- To show results that **don't** have a label, use a minus sign: `-label:no-results-with-this-label`.
 
