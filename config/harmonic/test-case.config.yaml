@@ -17,11 +17,28 @@ sets:
           - sdf worlds
     dimensions:
       os:
+        - MacOS
         - Ubuntu Jammy
       buildType:
         - Binary
         - Source
-  # Makes only the sdf worlds once
+  - filters:
+      - isMatch: true
+        labels:
+          - harmonic
+      - isMatch: false
+        name: install
+      - isMatch: false
+        name: src
+      - isMatch: false
+        labels:
+          - sdf worlds
+    dimensions:
+      os:
+        - Windows
+      buildType:
+        - Source
+  # Makes only the sdf worlds for MacOS and Ubuntu binaries
   - filters:
       - isMatch: true
         labels:
@@ -32,6 +49,7 @@ sets:
     dimensions:
       os:
         - Ubuntu Jammy
+        - MacOS
       buildType:
         - Binary
   #####################
@@ -91,7 +109,7 @@ sets:
   #####################
   # INSTALL FROM BINARIES
   #####################
-  # Install on Ubuntu from from binaries
+  # Install on Ubuntu from binaries
   - filters:
       - isMatch: true
         labels:
@@ -108,8 +126,7 @@ sets:
         - Ubuntu Jammy
       buildType:
         - Binary
-
-  # Install on macOS from from binaries
+  # Install on MacOS from binaries
   - filters:
       - isMatch: true
         labels:
