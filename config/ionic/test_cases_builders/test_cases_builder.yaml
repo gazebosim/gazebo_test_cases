@@ -18,7 +18,7 @@ test_cases_builders:
   permutations:
     os:
     - MacOS
-    - Ubuntu Jammy
+    - Ubuntu Noble
     - Windows
 
 - name: sdf_worlds
@@ -40,7 +40,7 @@ test_cases_builders:
     negate: false
   permutations:
     os:
-    - Ubuntu Jammy
+    - Ubuntu Noble
     buildType:
     - Source
 
@@ -84,7 +84,7 @@ test_cases_builders:
     negate: false
   permutations:
     os:
-    - Ubuntu Jammy
+    - Ubuntu Noble
     buildType:
     - Binary
 
