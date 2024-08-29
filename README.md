@@ -7,6 +7,11 @@ In other words, welcome to the Tutorial Party!
 
 Everyone, all contributions are welcome!
 
+### Don't have a compatible platform?
+
+Ionic on Ubuntu is only supported on the Noble version of Ubuntu (24.04). If you don't have this plaform, there are [docker images
+and instructions](https://github.com/j-rivero/ionic_testing) ready to use.
+
 ## How to contribute?
 
 The [Issues](https://github.com/gazebosim/gazebo_test_cases/issues) page has several tickets each containing specific instructions to test a particular functionality of Gazebo Ionic.
