@@ -40,83 +40,15 @@ Questions related to testing may be posted on the [Discussions](https://github.c
 
 ### Tickets filtered by Setup
 
-- [ ] [Ubuntu Noble, Binary](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22)
-
-  <details><summary>Labels</summary>
-
-  - [ ] [docs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22docs%22)
-  - [ ] [ionic](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22ionic%22)
-  - [ ] [gz-common](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-common%22)
-  - [ ] [gz-fuel-tools](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-fuel-tools%22)
-  - [ ] [gz-gui](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-gui%22)
-  - [ ] [gz-launch](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-launch%22)
-  - [ ] [gz-math](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-math%22)
-  - [ ] [gz-msgs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-msgs%22)
-  - [ ] [gz-physics](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-physics%22)
-  - [ ] [gz-plugin](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-plugin%22)
-  - [ ] [gz-rendering](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-rendering%22)
-  - [ ] [gz-sensors](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-sensors%22)
-  - [ ] [gz-sim](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-sim%22)
-  - [ ] [gz-tools](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-tools%22)
-  - [ ] [gz-transport](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-transport%22)
-  - [ ] [gz-utils](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22gz-utils%22)
-  - [ ] [sdf_tutorials](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdf_tutorials%22)
-  - [ ] [sdformat](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdformat%22)
-  - [ ] [sdf worlds](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Binary%22+label:%22generation-1%22+label:%22sdf%20worlds%22)
-
-  </details>
-- [ ] [Ubuntu Noble, Source](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22)
-
-  <details><summary>Labels</summary>
-
-  - [ ] [docs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22docs%22)
-  - [ ] [ionic](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22ionic%22)
-  - [ ] [gz-common](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-common%22)
-  - [ ] [gz-fuel-tools](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-fuel-tools%22)
-  - [ ] [gz-gui](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-gui%22)
-  - [ ] [gz-launch](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-launch%22)
-  - [ ] [gz-math](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-math%22)
-  - [ ] [gz-msgs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-msgs%22)
-  - [ ] [gz-physics](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-physics%22)
-  - [ ] [gz-plugin](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-plugin%22)
-  - [ ] [gz-rendering](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-rendering%22)
-  - [ ] [gz-sensors](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-sensors%22)
-  - [ ] [gz-sim](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-sim%22)
-  - [ ] [gz-tools](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-tools%22)
-  - [ ] [gz-transport](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-transport%22)
-  - [ ] [gz-utils](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22gz-utils%22)
-  - [ ] [sdf_tutorials](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22sdf_tutorials%22)
-  - [ ] [sdformat](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Ubuntu%20Noble%22+label:%22Source%22+label:%22generation-1%22+label:%22sdformat%22)
-
-  </details>
-- [ ] [MacOS, Source](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22)
-
-  <details><summary>Labels</summary>
-
-  - [ ] [docs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22+label:%22docs%22)
-  - [ ] [ionic](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Source%22+label:%22generation-1%22+label:%22ionic%22)
-
-  </details>
-- [ ] [Windows, Source](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Source%22+label:%22generation-1%22)
-
-  <details><summary>Labels</summary>
-
-  - [ ] [docs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Source%22+label:%22generation-1%22+label:%22docs%22)
-  - [ ] [ionic](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22Windows%22+label:%22Source%22+label:%22generation-1%22+label:%22ionic%22)
-
-  </details>
-- [ ] [MacOS, Binary](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22)
-
-  <details><summary>Labels</summary>
-
-  - [ ] [docs](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22+label:%22docs%22)
-  - [ ] [ionic](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22MacOS%22+label:%22Binary%22+label:%22generation-1%22+label:%22ionic%22)
-
-  </details>
-
-- [ ] [SDFormat Example Worlds](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue+is%3Aopen+label:%22sdf%20worlds%22+label:%22generation-1%22)
-
-
+- [`os: Ubuntu Noble`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+Ubuntu+Noble%22)
+- [`buildType: Source`, `os: Ubuntu Noble`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22buildType:+Source%22+label:%22os:+Ubuntu+Noble%22)
+- [`buildType: Binary`, `os: Ubuntu Noble`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22buildType:+Binary%22+label:%22os:+Ubuntu+Noble%22)
+- [`os: MacOS`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+MacOS%22)
+- [`buildType: Source`, `os: MacOS`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22buildType:+Source%22+label:%22os:+MacOS%22)
+- [`os: Windows`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+Windows%22)
+- [`buildType: Source`, `os: Windows`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22buildType:+Source%22+label:%22os:+Windows%22)
+- [`os: Any`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+Any%22)
+- [`buildType: Binary`, `os: MacOS`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22buildType:+Binary%22+label:%22os:+MacOS%22)
 
 ---
 
