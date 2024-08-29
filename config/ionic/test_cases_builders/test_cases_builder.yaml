@@ -12,32 +12,14 @@ test_cases_builders:
   - !Exclude
     all_labels: [sdf worlds]
     negate: false
+  - !Exclude
+    all_labels: [sdf_tutorials]
+    negate: false
   permutations:
     os:
     - MacOS
     - Ubuntu Jammy
-    buildType:
-    - Binary
-    - Source
-
-- name: main_windows
-  description: Makes everything but install files and sdf worlds
-  set:
-  - !Include
-    all_labels: null
-    negate: false
-  - !Exclude
-    any_names: [install, src]
-    all_labels: [docs]
-    negate: false
-  - !Exclude
-    all_labels: [sdf worlds]
-    negate: false
-  permutations:
-    os:
     - Windows
-    buildType:
-    - Source
 
 - name: sdf_worlds
   description: Makes only the sdf worlds for MacOS and Ubuntu binaries
@@ -47,10 +29,7 @@ test_cases_builders:
     negate: false
   permutations:
     os:
-    - MacOS
-    - Ubuntu Jammy
-    buildType:
-    - Binary
+      - Any
 
 - name: install_source_ubuntu
   description: Install on Ubuntu from source
