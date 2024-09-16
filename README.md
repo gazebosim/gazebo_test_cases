@@ -79,6 +79,10 @@ vcs import --input https://raw.githubusercontent.com/gazebo-tooling/gz_vendor/ma
 Binaries for the prereleases are not availalbe for Windows, therefore, it is necessary to build
 all Gazebo packages from source following the [Install from source](https://gazebosim.org/docs/ionic/install_windows_src/) instructions.
 
+## MacOS Tests
+Homebrew has removed support for Monterey (macOS 12) recently, so only Ventura (macOS 13) is supported.
+
+
 ## What if I want to test something else?
 If you would like to test the functionality of any other package or extend the capabilities tested above, please open additional tickets while following the format described above.
 
