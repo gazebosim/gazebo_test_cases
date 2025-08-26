@@ -2,7 +2,7 @@ name: Update and publish
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
   push:
     branches:
       - main
@@ -12,12 +12,12 @@ defaults:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
