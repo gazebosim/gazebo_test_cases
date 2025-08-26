@@ -3,6 +3,8 @@ import os
 import jinja2
 
 valid_labels = ["not-started", "completion-1", "completion-2", "completion-3"]
+score_multiplier_labels = { "os: Windows":  1.2, "os: MacOS": 1.2}
+score_difficulty_labels = { "easy":  6, "hard": 18}
 score_board = {}
 
 leaderboard_template = """
@@ -42,7 +44,7 @@ def get_issue_details(issue):
         comments_data = []
         label_data = []
         assignee_data = []
-        unique_completer = []
+        unique_completer = ["caguero", "mjcarroll", "iche033", "ahcorde", "jennuine", "bperseghetti", "scpeters", "jrivero", "traversaro", "azeey"]
         for assignee in issue.assignees:
             assignee_data.append(assignee.login)
         
@@ -66,7 +68,17 @@ def get_issue_details(issue):
         return []
     
 def evaluate_completions (comment_completion, issue_labels, issue_assignees, issue_title, issue_number, issue):
-        score_base_value = 6
+        
+        score_multiplier = 1
+        score_base_value = 12
+        for score_label in issue_labels:
+            if score_label in score_multiplier_labels:
+                score_multiplier = score_multiplier_labels[score_label]
+            if score_label in score_difficulty_labels:
+                score_base_value = score_difficulty_labels[score_label]
+
+        score_value = score_multiplier * score_base_value
+        
         number_completions = len(comment_completion)
         if number_completions > 3:
             print(f"Issue: #{issue_number} -  exceeds limit of 3 completers with value of {number_completions}.")
@@ -91,20 +103,20 @@ def evaluate_completions (comment_completion, issue_labels, issue_assignees, iss
 
                     score_board[comment['user']] = {
                         "issues": {},
-                        "score": score_base_value/number_completions,
+                        "score": score_value/number_completions,
                         "avatar_url": g.get_user(comment['user']).avatar_url
                         }
 
                     score_board[comment['user']]['issues'][issue_number] = {
                         "comment_url": comment["url"],
-                        "points": score_base_value/number_completions
+                        "points": score_value/number_completions
                         }
                 else: 
                     score_board[comment['user']]['issues'][issue_number]={
                         "comment_url": comment["url"],
-                        "points": score_base_value/number_completions
+                        "points": score_value/number_completions
                     }
-                    score_board[comment['user']]['score']+=score_base_value/number_completions    
+                    score_board[comment['user']]['score']+=score_value/number_completions    
 
         
 if __name__ == "__main__":
@@ -118,8 +130,8 @@ if __name__ == "__main__":
     target_repo = get_repo_object(repo_owner, repository_name)
     
     for target_issue_number in targets:
-        i+=1
         print(f"Processing #{target_issue_number} - ({i}/{num_issues})")
+        i+=1
         issue_object = get_issue_object(target_repo, target_issue_number)
     
         comments, labels, assignees, title = get_issue_details(issue_object)
