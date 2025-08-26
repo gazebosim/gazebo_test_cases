@@ -1,6 +1,7 @@
 from github import Github
 import os
 import jinja2
+import argparse
 
 valid_labels = ["not-started", "completion-1", "completion-2", "completion-3"]
 score_multiplier_labels = { "os: Windows":  1.2, "os: MacOS": 1.2}
@@ -13,7 +14,7 @@ leaderboard_template = """
 | **User** | **Points** | **Contributions** |
 | :-------: | :------: | :-------: |
 {% for user in users -%}
-| ![{{ user }}]( {{ users[user].avatar_url }} "{{ user }}")  | {{ users[user].score }}  | {% for issue in users[user].issues %}[#{{ issue }} +{{ users[user]['issues'][issue].points }}]({{ users[user]['issues'][issue].comment_url }}) {% endfor %} |
+| <img src="{{ users[user].avatar_url }}" alt="{{ user }}" width="128" height="128"> <br> [{{ user }}](https://github.com/{{ user }}) | {{ users[user].score|round(2) }}  | {% for issue in users[user].issues %}[#{{ issue }} +{{ users[user]['issues'][issue].points|round(2) }}]({{ users[user]['issues'][issue].comment_url }}) <br> {% endfor %} |
 {% endfor %}
 """
 template = jinja2.Template(leaderboard_template)
@@ -39,28 +40,40 @@ def get_issue_object(repo, issue_number):
         return []
 
 
-def get_issue_details(issue):
+def get_issue_details(issue, issue_number):
     try:
         comments_data = []
         label_data = []
         assignee_data = []
-        unique_completer = ["caguero", "mjcarroll", "iche033", "ahcorde", "jennuine", "bperseghetti", "scpeters", "jrivero", "traversaro", "azeey"]
+        ignore_completer = ["caguero", "mjcarroll", "iche033", "ahcorde", "jennuine", "bperseghetti", "scpeters", "jrivero", "traversaro", "azeey"]
+        unique_completer = []
         for assignee in issue.assignees:
             assignee_data.append(assignee.login)
         
         for label in issue.get_labels():
-            if label.name in valid_labels:
+            if (label.name in valid_labels or 
+                label.name in score_multiplier_labels or
+                label.name in score_difficulty_labels):
+
                 label_data.append(label.name)
 
         for comment in issue.get_comments():
             sanitized_comment = comment.body.replace("> [status: failed]","").replace("> [status: passed]","")
-            if "[status: passed]" in sanitized_comment or "[status: failed]" in sanitized_comment and comment.user.login not in unique_completer:
-                unique_completer.append(comment.user.login)
-                comments_data.append({
-                    'user': comment.user.login,
-                    'body': comment.body,
-                    'url': comment.html_url
-            })
+            if ("[status: passed]" in sanitized_comment or 
+                "[status: failed]" in sanitized_comment):
+                if (comment.user.login not in unique_completer and
+                    comment.user.login not in ignore_completer):
+
+                    print(f"Issue: #{issue_number} - Adding unique completer: {comment.user.login}")
+
+                    unique_completer.append(comment.user.login)
+                    comments_data.append({
+                        'user': comment.user.login,
+                        'body': comment.body,
+                        'url': comment.html_url
+                    })
+                else:
+                    print(f"Issue: #{issue_number} - Ignoring completer: {comment.user.login}")
 
         return comments_data, label_data, assignee_data, issue.title
     except Exception as e:
@@ -74,8 +87,10 @@ def evaluate_completions (comment_completion, issue_labels, issue_assignees, iss
         for score_label in issue_labels:
             if score_label in score_multiplier_labels:
                 score_multiplier = score_multiplier_labels[score_label]
+                print(f"Issue: #{issue_number} - label: { score_label } modifying multiplier: {score_multiplier} ")
             if score_label in score_difficulty_labels:
                 score_base_value = score_difficulty_labels[score_label]
+                print(f"Issue: #{issue_number} - label: { score_label } modifying difficulty value: {score_base_value} ")
 
         score_value = score_multiplier * score_base_value
         
@@ -120,21 +135,29 @@ def evaluate_completions (comment_completion, issue_labels, issue_assignees, iss
 
         
 if __name__ == "__main__":
-    repo_owner = "gazebosim" 
-    repository_name = "gazebo_test_cases"
-    start_issue = 1500
-    end_issue = 1560
-    targets = range(start_issue, end_issue+1)
-    num_issues=end_issue-start_issue
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-o", "--owner", type=str, default="gazebosim", help="Owner of the repository")
+    parser.add_argument("-r", "--repository", type=str, default="gazebo_test_cases", help="Repository to score issues over")
+    parser.add_argument("-l", "--label", type=str, default="ionic", help="Label to get relevant issues from")
+    args = parser.parse_args()
+
+    repo_owner = args.owner
+    repository_name = args.repository
+    target_label = args.label
     i=0
     target_repo = get_repo_object(repo_owner, repository_name)
-    
-    for target_issue_number in targets:
-        print(f"Processing #{target_issue_number} - ({i}/{num_issues})")
+
+    repo_issues_object = list(target_repo.get_issues(state="all", labels=[target_label]))
+    num_issues = len(repo_issues_object)
+    for issue_object in repo_issues_object:
+        
+        target_issue_number = issue_object.number
         i+=1
-        issue_object = get_issue_object(target_repo, target_issue_number)
+        print(f"Processing #{target_issue_number} - ({i}/{num_issues})")
+        
     
-        comments, labels, assignees, title = get_issue_details(issue_object)
+        comments, labels, assignees, title = get_issue_details(issue_object, target_issue_number)
     
         if labels and comments:
             evaluate_completions(comments, labels, assignees, title, target_issue_number, issue_object)
@@ -143,8 +166,8 @@ if __name__ == "__main__":
 
     leader_board_md = template.render(users=sorted_score_board)
     try:
-        file_name = "LEADER_BOARD.md"
-        branch_name="test_points"
+        file_name = f"{target_label.upper()}_LEADER_BOARD.md"
+        branch_name="leaderboard"
         contents = target_repo.get_contents(file_name, ref=branch_name)
         target_repo.update_file(contents.path, "Update LEADER_BOARD.md", leader_board_md, contents.sha, branch=branch_name)
         print(f"{file_name} UPDATED")

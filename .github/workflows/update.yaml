@@ -2,10 +2,12 @@ name: Update and publish
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/45 * * * *'
   push:
     branches:
-      - main
+      - master
+  workflow_dispatch:
+
 defaults:
   run:
     shell: bash
@@ -17,7 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,4 +31,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -u leader_board.py
+          python -u leader_board.py --owner gazebosim --repository gazebo_test_cases --label ionic
