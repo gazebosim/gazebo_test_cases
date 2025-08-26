@@ -169,8 +169,17 @@ if __name__ == "__main__":
         file_name = f"{target_label.upper()}_LEADER_BOARD.md"
         branch_name="leaderboard"
         contents = target_repo.get_contents(file_name, ref=branch_name)
-        target_repo.update_file(contents.path, "Update LEADER_BOARD.md", leader_board_md, contents.sha, branch=branch_name)
+        target_repo.update_file(contents.path, f"Update {file_name}", leader_board_md, contents.sha, branch=branch_name)
         print(f"{file_name} UPDATED")
     except Exception:
-        target_repo.create_file(file_name, "Update LEADER_BOARD.md", leader_board_md, branch=branch_name)
+        target_repo.create_file(file_name, f"Update {file_name}", leader_board_md, branch=branch_name)
         print(f"{file_name} CREATED")
+    try:
+        file_name_readme = "README.md"
+        branch_name="leaderboard"
+        contents = target_repo.get_contents("README.md", ref=branch_name)
+        target_repo.update_file(contents.path, "Update README.md", leader_board_md, contents.sha, branch=branch_name)
+        print("README.md UPDATED")
+    except Exception:
+        target_repo.create_file("README.md", f"Update README.md", leader_board_md, branch=branch_name)
+        print("README.md CREATED")
