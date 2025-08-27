@@ -56,6 +56,10 @@ def get_issue_details(issue, issue_number):
                 label.name in score_difficulty_labels):
 
                 label_data.append(label.name)
+        if len(label_data) < 1:
+            print(f"Issue: #{issue_number} - Does not have a valid label state, adding label: not-started")
+            issue.add_to_labels(valid_labels[0])
+            label_data.append(valid_labels[0])
 
         for comment in issue.get_comments():
             sanitized_comment = comment.body.replace("> [status: failed]","").replace("> [status: passed]","")
