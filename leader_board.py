@@ -56,8 +56,8 @@ def get_issue_details(issue, issue_number):
                 label.name in score_difficulty_labels):
 
                 label_data.append(label.name)
-        if len(label_data) < 1:
-            print(f"Issue: #{issue_number} - Does not have a valid label state, adding label: not-started")
+        if not any(matching in valid_labels for matching in label_data):
+            print(f"Issue: #{issue_number} - Does not have a valid label state, adding label: {valid_labels[0]}")
             issue.add_to_labels(valid_labels[0])
             label_data.append(valid_labels[0])
 
