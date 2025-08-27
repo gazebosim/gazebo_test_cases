@@ -28,4 +28,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -u leader_board.py --owner gazebosim --repository gazebo_test_cases --label ionic
+          python -u leader_board.py --owner gazebosim --repository gazebo_test_cases --label jetty
