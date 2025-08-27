@@ -36,7 +36,17 @@ rocker  --x11 --  ghcr.io/gazebosim/gz-jetty:main gz sim -v4 shapes.sdf
 > If you have an Intel integrated graphics card, you'll need to add `--devices /dev/dri` to the `rocker` command.
 > See `rocker` [README](https://github.com/osrf/rocker?tab=readme-ov-file#installation).
 
+## Leaderboard
+
+We have a [leaderboard](https://github.com/gazebosim/gazebo_test_cases/blob/leaderboard/README.md) that lists all contributors and the points they have accumulated so far. This is updated approximately every 45 mintes.
+
 ## How to contribute?
+
+The first step is to register on our sign up [form](https://docs.google.com/forms/d/e/1FAIpQLSc1tHoqcYQcuLG4b_ao2uA9cGdX4huNBXyuqd10wI0KT-GqSw/viewform) so
+we can map your Github username to your email so we can send you instructions on getting your free swag if you are in the top 20.
+
+> [!NOTE]
+> More detailed instructions are available on our Discourse [post](https://discourse.openrobotics.org/t/gazebo-jetty-test-and-tutorial-party-instructions/49779)
 
 The [Issues](https://github.com/gazebosim/gazebo_test_cases/issues) page has several tickets each containing specific instructions to test a particular functionality of Gazebo Jetty.
 Each ticket will have the following sections:
@@ -103,6 +113,9 @@ Questions related to testing may be posted on [Discord](bit.ly/GazeboDiscord) in
 - [`os: MacOS`, `transport: zenoh`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+MacOS%22+label:%22transport:+zenoh%22)
 - [`os: Windows`, `transport: zenoh`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is:issue+is:open+label:%22os:+Windows%22+label:%22transport:+zenoh%22)
 
+#### Filter based on completion status
+
+- [`not-started`]https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue%20state%3Aopen%20label%3Anot-started
 ---
 
 Here are some things to know about Github search:
