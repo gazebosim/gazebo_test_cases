@@ -115,7 +115,8 @@ Questions related to testing may be posted on [Discord](bit.ly/GazeboDiscord) in
 
 #### Filter based on completion status
 
-- [`not-started`]https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue%20state%3Aopen%20label%3Anot-started
+- [`not-started`](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue%20state%3Aopen%20label%3Anot-started)
+- [no comments (not claimed)](https://github.com/gazebosim/gazebo_test_cases/issues?q=is%3Aissue%20state%3Aopen%20label%3Anot-started%20sort%3Acomments-asc)
 ---
 
 Here are some things to know about Github search:
