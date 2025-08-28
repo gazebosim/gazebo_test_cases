@@ -17,7 +17,7 @@ leaderboard_template = r"""
 | **Place** | **User** | **Points** | **Contributions** |
 | :-------: | :-------: | :------: | :-------: |
 {% for user in users -%}
-| {{ loop.index }} | <img src="{{ users[user].avatar_url }}" alt="{{ user }}" width="128" height="128"> <br> [{{ user }}](https://github.com/{{ user }}) <br> **Unique Completed: {{ users[user].number_unique_completed }}** <br> $${{ '{' }}\color{{ '{' }}green{{ '}' }}First \space Completed: \space {{ users[user].number_first_completed }}{{ '}' }}$$ <br> $${{ '{' }}\color{{ '{' }}yellow{{ '}' }}Second \space Completed: \space {{ users[user].number_second_completed }}{{ '}' }}$$ <br> $${{ '{' }}\color{{ '{' }}red{{ '}' }}Third \space Completed: \space {{ users[user].number_third_completed }}{{ '}' }}$$ <br> Total Completed: {{ users[user].number_completed }} | {{ users[user].score|round(2) }}  | {% for issue in users[user].issues %}[#{{ issue }} +{{ users[user]['issues'][issue].points|round(2) }}]({{ users[user]['issues'][issue].comment_url }}) $${{ '{' }}\color{{ '{' }}{%- if  users[user]['issues'][issue].completer_number == 1 -%}green{%- elif  users[user]['issues'][issue].completer_number == 2 -%}yellow{%- else -%}red{%- endif -%}{{ '}' }}({{ users[user]['issues'][issue].completer_number }}){{ '}' }}$$ {{ users[user]['issues'][issue].emoji }} {% if loop.index % 3 == 0 %}<br>{% endif %} {% endfor %} |
+| {{ loop.index }} | <img src="{{ users[user].avatar_url }}" alt="{{ user }}" width="128" height="128"> <br> [{{ user }}](https://github.com/{{ user }}) <br> **Unique Completed: {{ users[user].number_unique_completed }}** <br> $${{ '{' }}\color{{ '{' }}green{{ '}' }}First \space Completed: \space {{ users[user].number_first_completed }}{{ '}' }}$$ <br> $${{ '{' }}\color{{ '{' }}yellow{{ '}' }}Second \space Completed: \space {{ users[user].number_second_completed }}{{ '}' }}$$ <br> $${{ '{' }}\color{{ '{' }}red{{ '}' }}Third \space Completed: \space {{ users[user].number_third_completed }}{{ '}' }}$$ <br> Total Completed: {{ users[user].number_completed }} | {{ users[user].score|round(2) }}  | {% for issue in users[user].issues %}[#{{ issue }} +{{ users[user]['issues'][issue].points|round(2) }}]({{ users[user]['issues'][issue].comment_url }}) $${{ '{' }}\color{{ '{' }}{%- if  users[user]['issues'][issue].completer_number == 1 -%}green{%- elif  users[user]['issues'][issue].completer_number == 2 -%}yellow{%- else -%}red{%- endif -%}{{ '}' }}({{ users[user]['issues'][issue].completer_number }}/{{ users[user]['issues'][issue].number_completions}}){{ '}' }}$$ {{ users[user]['issues'][issue].emoji }} {% if loop.index % 3 == 0 %}<br>{% endif %} {% endfor %} |
 {% endfor %}
 """
 
@@ -136,14 +136,16 @@ def evaluate_completions (comment_completion, issue_labels, issue_assignees, iss
                         "comment_url": comment["url"],
                         "points": score_value/number_completions,
                         "emoji": completion_emoji,
-                        "completer_number": completer_number
+                        "completer_number": completer_number,
+                        "number_completions": number_completions
                         }
                 else:
                     score_board[comment['user']]['issues'][issue_number]={
                         "comment_url": comment["url"],
                         "points": score_value/number_completions,
                         "emoji": completion_emoji,
-                        "completer_number": completer_number
+                        "completer_number": completer_number,
+                        "number_completions": number_completions
                     }
                     score_board[comment['user']]['score']+=score_value/number_completions
                     score_board[comment['user']]['number_completed']+=1
