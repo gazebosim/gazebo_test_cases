@@ -3,6 +3,10 @@
 Welcome! The purpose of this repository is to guide the testing of various functionalities of Gazebo Jetty prior to official release.
 In other words, welcome to the Tutorial Party!
 
+> [!NOTE]
+> # 🏆 [View the live leaderboard](https://github.com/gazebosim/gazebo_test_cases/blob/leaderboard/README.md) 🏆
+
+
 ## Who can contribute?
 
 Everyone, all contributions are welcome!
@@ -35,10 +39,6 @@ rocker  --x11 --  ghcr.io/gazebosim/gz-jetty:main gz sim -v4 shapes.sdf
 > [!TIP]
 > If you have an Intel integrated graphics card, you'll need to add `--devices /dev/dri` to the `rocker` command.
 > See `rocker` [README](https://github.com/osrf/rocker?tab=readme-ov-file#installation).
-
-## Leaderboard
-
-We have a [leaderboard](https://github.com/gazebosim/gazebo_test_cases/blob/leaderboard/README.md) that lists all contributors and the points they have accumulated so far. This is updated approximately every 45 mintes.
 
 ## How to contribute?
 
