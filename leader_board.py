@@ -21,7 +21,18 @@ leaderboard_template = r"""
 {% endfor %}
 """
 
+simple_leaderboard_template = r"""
+# **LEADER BOARD**
+
+| **Place** | **User** | **Points** |
+| :-------: | :------- | :------: |
+{% for user in users -%}
+| {{ loop.index }} | <img src="{{ users[user].avatar_url }}" alt="{{ user }}" width="24" height="24">&emsp;**{{ user }}** | {{ users[user].score|round(2) }} |
+{% endfor %}
+"""
+
 template = jinja2.Template(leaderboard_template)
+simple_template = jinja2.Template(simple_leaderboard_template)
 
 g = Github(os.getenv("GITHUB_TOKEN"))
 
@@ -203,3 +214,14 @@ if __name__ == "__main__":
     except Exception:
         target_repo.create_file("README.md", f"Update README.md", leader_board_md, branch=branch_name)
         print("README.md CREATED")
+
+    simple_leader_board_md = simple_template.render(users=sorted_score_board)
+    try:
+        file_name = f"{target_label.upper()}_SIMPLE_LEADER_BOARD.md"
+        branch_name="leaderboard"
+        contents = target_repo.get_contents(file_name, ref=branch_name)
+        target_repo.update_file(contents.path, f"Update {file_name}", simple_leader_board_md, contents.sha, branch=branch_name)
+        print(f"{file_name} UPDATED")
+    except Exception:
+        target_repo.create_file(file_name, f"Update {file_name}", simple_leader_board_md, branch=branch_name)
+        print(f"{file_name} CREATED")
