@@ -3,9 +3,9 @@
 
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
-| 1 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 292.0 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 291.0 |
-| 3 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 261.0 |
+| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 309.0 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 292.0 |
+| 3 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 291.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 227.0 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/162324988?v=4" alt="Physic69" width="24" height="24">&emsp;**Physic69** | 205.0 |
 | 6 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 96.0 |
