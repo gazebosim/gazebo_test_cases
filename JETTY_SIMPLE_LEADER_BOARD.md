@@ -20,5 +20,5 @@
 | 15 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 15.0 |
 | 16 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
-| 18 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 4.0 |
-| 19 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 4.0 |
+| 18 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 10.0 |
+| 19 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 4.0 |
