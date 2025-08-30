@@ -16,7 +16,7 @@
 | 11 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 72.0 |
 | 12 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 58.0 |
 | 13 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
-| 14 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 27.0 |
+| 14 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 39.0 |
 | 15 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
 | 16 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
