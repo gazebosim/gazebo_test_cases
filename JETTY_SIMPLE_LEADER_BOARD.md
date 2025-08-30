@@ -3,8 +3,8 @@
 
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
-| 1 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 322.0 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 318.0 |
+| 1 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 336.0 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 322.0 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 309.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 245.0 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/162324988?v=4" alt="Physic69" width="24" height="24">&emsp;**Physic69** | 217.0 |
@@ -16,9 +16,9 @@
 | 11 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 72.0 |
 | 12 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 58.0 |
 | 13 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
-| 14 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 39.0 |
+| 14 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 33.0 |
 | 15 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
-| 16 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
-| 17 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
-| 18 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 10.0 |
+| 16 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 16.0 |
+| 17 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
+| 18 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
 | 19 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 4.0 |
