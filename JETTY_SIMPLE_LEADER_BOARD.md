@@ -10,7 +10,7 @@
 | 5 | <img src="https://avatars.githubusercontent.com/u/162324988?v=4" alt="Physic69" width="24" height="24">&emsp;**Physic69** | 216.0 |
 | 6 | <img src="https://avatars.githubusercontent.com/u/23265149?v=4" alt="jasmeet0915" width="24" height="24">&emsp;**jasmeet0915** | 122.4 |
 | 7 | <img src="https://avatars.githubusercontent.com/u/204998127?v=4" alt="Narashima1808" width="24" height="24">&emsp;**Narashima1808** | 111.0 |
-| 8 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 96.0 |
+| 8 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 108.0 |
 | 9 | <img src="https://avatars.githubusercontent.com/u/40249250?v=4" alt="matosinho" width="24" height="24">&emsp;**matosinho** | 84.4 |
 | 10 | <img src="https://avatars.githubusercontent.com/u/106218485?v=4" alt="pratik-adhikari" width="24" height="24">&emsp;**pratik-adhikari** | 75.0 |
 | 11 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 72.0 |
