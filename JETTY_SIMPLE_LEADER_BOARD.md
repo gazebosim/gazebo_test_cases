@@ -4,7 +4,7 @@
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
 | 1 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 383.0 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 345.0 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 339.0 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 322.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 233.0 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/162324988?v=4" alt="Physic69" width="24" height="24">&emsp;**Physic69** | 216.0 |
@@ -21,4 +21,5 @@
 | 16 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
 | 18 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
-| 19 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 4.0 |
+| 19 | <img src="https://avatars.githubusercontent.com/u/108773152?v=4" alt="XINJIANGMO" width="24" height="24">&emsp;**XINJIANGMO** | 6.0 |
+| 20 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 4.0 |
