@@ -17,8 +17,8 @@
 | 12 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 52.0 |
 | 13 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 47.0 |
 | 14 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
-| 15 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 39.0 |
-| 16 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 28.0 |
+| 15 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 40.0 |
+| 16 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 39.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/143251224?v=4" alt="Go-Ab1" width="24" height="24">&emsp;**Go-Ab1** | 18.0 |
 | 18 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
 | 19 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
