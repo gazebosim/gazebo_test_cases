@@ -4,7 +4,7 @@
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
 | 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 607.8 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 382.0 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 394.0 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 316.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/73806646?v=4" alt="saiaravind19" width="24" height="24">&emsp;**saiaravind19** | 252.0 |
