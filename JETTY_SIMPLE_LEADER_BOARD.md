@@ -3,7 +3,7 @@
 
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
-| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 607.8 |
+| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 605.8 |
 | 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 394.0 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 316.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
@@ -20,9 +20,9 @@
 | 15 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 45.0 |
 | 16 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 40.0 |
-| 18 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 24.0 |
+| 18 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 28.0 |
 | 19 | <img src="https://avatars.githubusercontent.com/u/143251224?v=4" alt="Go-Ab1" width="24" height="24">&emsp;**Go-Ab1** | 18.0 |
 | 20 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
 | 21 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
 | 22 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
-| 23 | <img src="https://avatars.githubusercontent.com/u/108773152?v=4" alt="XINJIANGMO" width="24" height="24">&emsp;**XINJIANGMO** | 6.0 |
+| 23 | <img src="https://avatars.githubusercontent.com/u/108773152?v=4" alt="XINJIANGMO" width="24" height="24">&emsp;**XINJIANGMO** | 4.0 |
