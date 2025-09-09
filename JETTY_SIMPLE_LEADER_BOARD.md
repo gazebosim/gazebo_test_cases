@@ -3,8 +3,8 @@
 
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
-| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 816.8 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 712.0 |
+| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 806.0 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 719.2 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 310.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/73806646?v=4" alt="saiaravind19" width="24" height="24">&emsp;**saiaravind19** | 273.6 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
@@ -21,8 +21,8 @@
 | 16 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 45.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
 | 18 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 40.0 |
-| 19 | <img src="https://avatars.githubusercontent.com/u/143251224?v=4" alt="Go-Ab1" width="24" height="24">&emsp;**Go-Ab1** | 22.0 |
-| 20 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 21.6 |
+| 19 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 32.4 |
+| 20 | <img src="https://avatars.githubusercontent.com/u/143251224?v=4" alt="Go-Ab1" width="24" height="24">&emsp;**Go-Ab1** | 22.0 |
 | 21 | <img src="https://avatars.githubusercontent.com/u/161116503?v=4" alt="ArchanaKulkarni29" width="24" height="24">&emsp;**ArchanaKulkarni29** | 18.0 |
 | 22 | <img src="https://avatars.githubusercontent.com/u/71880369?v=4" alt="Arnold-Dsouza" width="24" height="24">&emsp;**Arnold-Dsouza** | 14.4 |
 | 23 | <img src="https://avatars.githubusercontent.com/u/95215270?v=4" alt="Mubeenali53" width="24" height="24">&emsp;**Mubeenali53** | 12.0 |
