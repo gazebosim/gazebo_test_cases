@@ -3,8 +3,8 @@
 
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
-| 1 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 791.6 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 719.2 |
+| 1 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 719.2 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 425.0 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 310.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/73806646?v=4" alt="saiaravind19" width="24" height="24">&emsp;**saiaravind19** | 273.6 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
@@ -12,13 +12,13 @@
 | 7 | <img src="https://avatars.githubusercontent.com/u/23265149?v=4" alt="jasmeet0915" width="24" height="24">&emsp;**jasmeet0915** | 165.6 |
 | 8 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 114.0 |
 | 9 | <img src="https://avatars.githubusercontent.com/u/204998127?v=4" alt="Narashima1808" width="24" height="24">&emsp;**Narashima1808** | 111.0 |
-| 10 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 97.0 |
+| 10 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 100.0 |
 | 11 | <img src="https://avatars.githubusercontent.com/u/40249250?v=4" alt="matosinho" width="24" height="24">&emsp;**matosinho** | 84.4 |
 | 12 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 76.0 |
 | 13 | <img src="https://avatars.githubusercontent.com/u/106218485?v=4" alt="pratik-adhikari" width="24" height="24">&emsp;**pratik-adhikari** | 75.0 |
 | 14 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 66.0 |
-| 15 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 53.0 |
-| 16 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 46.8 |
+| 15 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 64.8 |
+| 16 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 53.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 45.0 |
 | 18 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
 | 19 | <img src="https://avatars.githubusercontent.com/u/18173602?v=4" alt="chen-harrison" width="24" height="24">&emsp;**chen-harrison** | 40.0 |
