@@ -4,7 +4,7 @@
 | **Place** | **User** | **Points** |
 | :-------: | :------- | :------: |
 | 1 | <img src="https://avatars.githubusercontent.com/u/126786356?v=4" alt="akky20" width="24" height="24">&emsp;**akky20** | 719.2 |
-| 2 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 417.8 |
+| 2 | <img src="https://avatars.githubusercontent.com/u/172131969?v=4" alt="Creator-1705" width="24" height="24">&emsp;**Creator-1705** | 410.6 |
 | 3 | <img src="https://avatars.githubusercontent.com/u/54469384?v=4" alt="nikodemj9" width="24" height="24">&emsp;**nikodemj9** | 310.0 |
 | 4 | <img src="https://avatars.githubusercontent.com/u/73806646?v=4" alt="saiaravind19" width="24" height="24">&emsp;**saiaravind19** | 273.6 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
@@ -13,7 +13,7 @@
 | 8 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 114.0 |
 | 9 | <img src="https://avatars.githubusercontent.com/u/204998127?v=4" alt="Narashima1808" width="24" height="24">&emsp;**Narashima1808** | 111.0 |
 | 10 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 100.0 |
-| 11 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 86.4 |
+| 11 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 93.6 |
 | 12 | <img src="https://avatars.githubusercontent.com/u/40249250?v=4" alt="matosinho" width="24" height="24">&emsp;**matosinho** | 84.4 |
 | 13 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 76.0 |
 | 14 | <img src="https://avatars.githubusercontent.com/u/106218485?v=4" alt="pratik-adhikari" width="24" height="24">&emsp;**pratik-adhikari** | 75.0 |
