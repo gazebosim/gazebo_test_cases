@@ -14,11 +14,11 @@
 | 9 | <img src="https://avatars.githubusercontent.com/u/204998127?v=4" alt="Narashima1808" width="24" height="24">&emsp;**Narashima1808** | 111.0 |
 | 10 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 100.0 |
 | 11 | <img src="https://avatars.githubusercontent.com/u/231303564?v=4" alt="mukul2020" width="24" height="24">&emsp;**mukul2020** | 93.6 |
-| 12 | <img src="https://avatars.githubusercontent.com/u/40249250?v=4" alt="matosinho" width="24" height="24">&emsp;**matosinho** | 84.4 |
-| 13 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 76.0 |
-| 14 | <img src="https://avatars.githubusercontent.com/u/106218485?v=4" alt="pratik-adhikari" width="24" height="24">&emsp;**pratik-adhikari** | 75.0 |
-| 15 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 66.0 |
-| 16 | <img src="https://avatars.githubusercontent.com/u/24916364?v=4" alt="srmainwaring" width="24" height="24">&emsp;**srmainwaring** | 64.8 |
+| 12 | <img src="https://avatars.githubusercontent.com/u/24916364?v=4" alt="srmainwaring" width="24" height="24">&emsp;**srmainwaring** | 86.4 |
+| 13 | <img src="https://avatars.githubusercontent.com/u/40249250?v=4" alt="matosinho" width="24" height="24">&emsp;**matosinho** | 84.4 |
+| 14 | <img src="https://avatars.githubusercontent.com/u/43175555?v=4" alt="SuperGops7" width="24" height="24">&emsp;**SuperGops7** | 76.0 |
+| 15 | <img src="https://avatars.githubusercontent.com/u/106218485?v=4" alt="pratik-adhikari" width="24" height="24">&emsp;**pratik-adhikari** | 75.0 |
+| 16 | <img src="https://avatars.githubusercontent.com/u/27130471?v=4" alt="mohamedsayed18" width="24" height="24">&emsp;**mohamedsayed18** | 66.0 |
 | 17 | <img src="https://avatars.githubusercontent.com/u/214097032?v=4" alt="shreya-ramesh" width="24" height="24">&emsp;**shreya-ramesh** | 53.0 |
 | 18 | <img src="https://avatars.githubusercontent.com/u/82680922?v=4" alt="CursedRock17" width="24" height="24">&emsp;**CursedRock17** | 45.0 |
 | 19 | <img src="https://avatars.githubusercontent.com/u/75070782?v=4" alt="s0um0r0y" width="24" height="24">&emsp;**s0um0r0y** | 40.0 |
