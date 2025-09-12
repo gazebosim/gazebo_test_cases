@@ -9,8 +9,8 @@
 | 4 | <img src="https://avatars.githubusercontent.com/u/73806646?v=4" alt="saiaravind19" width="24" height="24">&emsp;**saiaravind19** | 273.6 |
 | 5 | <img src="https://avatars.githubusercontent.com/u/5486901?v=4" alt="jmackay2" width="24" height="24">&emsp;**jmackay2** | 269.0 |
 | 6 | <img src="https://avatars.githubusercontent.com/u/162324988?v=4" alt="Physic69" width="24" height="24">&emsp;**Physic69** | 234.0 |
-| 7 | <img src="https://avatars.githubusercontent.com/u/23265149?v=4" alt="jasmeet0915" width="24" height="24">&emsp;**jasmeet0915** | 165.6 |
-| 8 | <img src="https://avatars.githubusercontent.com/u/24916364?v=4" alt="srmainwaring" width="24" height="24">&emsp;**srmainwaring** | 151.2 |
+| 7 | <img src="https://avatars.githubusercontent.com/u/24916364?v=4" alt="srmainwaring" width="24" height="24">&emsp;**srmainwaring** | 172.8 |
+| 8 | <img src="https://avatars.githubusercontent.com/u/23265149?v=4" alt="jasmeet0915" width="24" height="24">&emsp;**jasmeet0915** | 165.6 |
 | 9 | <img src="https://avatars.githubusercontent.com/u/7413624?v=4" alt="avanmalleghem" width="24" height="24">&emsp;**avanmalleghem** | 114.0 |
 | 10 | <img src="https://avatars.githubusercontent.com/u/204998127?v=4" alt="Narashima1808" width="24" height="24">&emsp;**Narashima1808** | 111.0 |
 | 11 | <img src="https://avatars.githubusercontent.com/u/57068888?v=4" alt="AronLapp" width="24" height="24">&emsp;**AronLapp** | 100.0 |
