@@ -1,8 +1,6 @@
 name: Update and publish
 
 on:
-  schedule:
-    - cron: '*/45 * * * *'
   workflow_dispatch:
 
 defaults:
