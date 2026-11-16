@@ -1,0 +1,138 @@
+test_cases_builders:
+- name: main
+  description: Makes everything but install files and sdf worlds
+  instruction: |
+      > [!IMPORTANT]
+      > ## Build from source on Windows
+      > Binaries are not yet available for windows so you will first need to build Gazebo Jetty from source following the instructions in
+      > https://gazebosim.org/docs/jetty/install_windows_src/
+  set:
+  - !Include
+    all_labels: null
+    negate: false
+  - !Exclude
+    any_names: [install, src]
+    all_labels: [docs]
+    negate: false
+  - !Exclude
+    all_labels: [sdf worlds]
+    negate: false
+  - !Exclude
+    all_labels: [sdf_tutorials]
+    negate: false
+  - !Exclude
+    all_labels: [gz-transport]
+    any_names: [installation, messages, services]
+    negate: false
+  permutations:
+    os:
+    # - MacOS
+    # - Ubuntu Noble
+    - Windows
+
+- name: sdf_worlds
+  description: The SDF worlds can be run on any platform
+  instruction: |
+      > [!IMPORTANT]
+      > ## Build from source on Windows
+      > If you are using Windows, note that binaries are not yet available, so you will first need to build Gazebo Jetty
+      > from source following the instructions in https://gazebosim.org/docs/jetty/install_windows_src/
+  set:
+  - !Include
+    all_labels: [sdf worlds]
+    negate: false
+  permutations:
+    os:
+      - Any
+  labels: [easy]
+
+# - name: install_source_ubuntu
+#   description: Install on Ubuntu from source
+#   set:
+#   - !Include
+#     all_labels: [docs]
+#     any_names: [ubuntu_src]
+#     negate: false
+#   permutations:
+#     os:
+#     - Ubuntu Noble
+#     buildType:
+#     - Source
+#
+# - name: install_source_macos
+#   description: Install on MacOS from source
+#   set:
+#   - !Include
+#     all_labels: [docs]
+#     any_names: [osx_src]
+#     negate: false
+#   permutations:
+#     os:
+#     - MacOS
+#     buildType:
+#     - Source
+
+# - name: install_source_win
+#   description: Install on Windows from source
+#   set:
+#   - !Include
+#     all_labels: [docs]
+#     any_names: [windows_src]
+#     negate: false
+#   permutations:
+#     os:
+#     - Windows
+#     buildType:
+#     - Source
+#
+
+# - name: install_binaries_ubuntu
+#   description: Install on Ubuntu from binaries
+#   set:
+#   - !Include
+#     all_labels: [docs]
+#     any_names: [install_ubuntu]
+#     negate: false
+#   - !Exclude
+#     all_labels: [docs]
+#     any_names: [src]
+#     negate: false
+#   permutations:
+#     os:
+#     - Ubuntu Noble
+#     buildType:
+#     - Binary
+#
+# - name: install_binaries_macos
+#   description: Install on MacOS from binaries
+#   set:
+#   - !Include
+#     all_labels: [docs]
+#     any_names: [install_osx]
+#     negate: false
+#   - !Exclude
+#     all_labels: [docs]
+#     any_names: [src]
+#     negate: false
+#   permutations:
+#     os:
+#     - MacOS
+#     buildType:
+#     - Binary
+
+- name: transport_with_zenoh
+  description: >
+    Test gz-transport with Zenoh. In each terminal, run `export GZ_TRANSPORT_IMPLEMENTATION=zenoh` before running any of the commands in the tutorial.
+  set:
+  - !Include
+    all_labels: [gz-transport]
+    any_names: [installation, messages, services]
+    negate: false
+  permutations:
+    os:
+    # - MacOS
+    # - Ubuntu Noble
+    - Windows
+    transport:
+    - zeromq
+    - zenoh

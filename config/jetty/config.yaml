@@ -1,0 +1,33 @@
+repo_owner: gazebosim
+repo_name: gazebo_test_cases
+workspace_version: 0.0.1
+yatm_v2_version: 1.0.0
+requirements_dirs:
+- requirements
+test_cases_builders_dirs:
+- test_cases_builders
+new_requirements_dir: requirements
+new_test_cases_builder_dir: test_cases_builders
+generated_files_dir: generated_files
+labels:
+- name: 'needs attention: bug'
+  color: f0440a
+  description: A bug has been found and needs to be confirmed
+- name: 'needs attention: bad instructions'
+  color: f0440a
+  description: The issue instructions don't appear to be correct or complete
+- name: 'confirmed: bug'
+  color: dcacf2
+  description: A bug was confirmed
+- name: 'confirmed: bad instructions'
+  color: dcacf2
+  description: The issue instructions have been confirmed to be incorrect or incomplete
+- name: 'confirmed: works as expected'
+  color: cef2ac
+  description: Works as expected
+- name: 'who: community tested'
+  color: b1e8fd
+  description: A community member has tested this
+- name: 'who: core team tested'
+  color: 55d0db
+  description: A core team member has tested this

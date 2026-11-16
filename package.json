@@ -1,0 +1,28 @@
+{
+  "name": "gazebo_test_cases",
+  "version": "0.0.1",
+  "description": "Gazebo tutorial party",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gazebosim/gazebo_test_cases.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gazebosim/gazebo_test_cases/issues"
+  },
+  "homepage": "https://github.com/gazebosim/gazebo_test_cases#readme",
+  "dependencies": {
+    "csv": "^6.4.1",
+    "endent": "^2.1.0",
+    "fast-xml-parser": "^5.2.5",
+    "js-yaml": "^4.1.0",
+    "ros2-cache": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

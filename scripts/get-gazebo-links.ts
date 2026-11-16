@@ -1,8 +1,8 @@
 import {XMLParser} from 'fast-xml-parser'
 import fs from 'fs'
+import yaml from 'js-yaml'
 import {join} from 'path'
 import * as ros2 from 'ros2-cache'
-import {getNumber} from './utils'
 import type GazeboDoc from './__types__/GazeboDoc'
 import type GazeboRepoDocs from './__types__/GazeboRepoDocs'
 
@@ -20,12 +20,14 @@ type GzWorldRepo = {
   name: string
   branch: string
   pathToWoldFiles: string
+  branch_name_override?: string
 }
 
 type GzTutorialRepos = {
   reposYamlUrl: string
   reposToSkip: string[]
   tutorialsDirectory: string
+  branch_name_overrides?: Record<string, string>
 }
 
 type SdfTutorialRepo = {
@@ -43,6 +45,18 @@ type GetLinksArgs = {
   gzWorldRepo: GzWorldRepo
   gzTutorialRepos: GzTutorialRepos
   sdfTutorialRepo: SdfTutorialRepo
+}
+
+type GazeboDocIndexPage = {
+  name: string
+  title: string
+  file: string
+  descripition: string
+  children: GazeboDocIndexPage[]
+}
+
+type GazeboDocIndex = {
+  pages: GazeboDocIndexPage[]
 }
 
 export async function getGazeboLinks({
@@ -71,6 +85,7 @@ export async function getGazeboLinks({
     reposYamlUrl: gzTutorialRepos.reposYamlUrl,
     reposToSkip: gzTutorialRepos.reposToSkip,
     tutorialsDirectory: gzTutorialRepos.tutorialsDirectory,
+    branch_name_overrides: gzTutorialRepos.branch_name_overrides
   })
 
   const sdfTutorial = await getSdfTutorialLinks({
@@ -90,6 +105,7 @@ export async function getGazeboLinks({
     org: gzWorldRepo.org,
     repo: gzWorldRepo.name,
     relativePath: gzWorldRepo.pathToWoldFiles,
+    branch_name_override: gzWorldRepo.branch_name_override
   })
 
   const gzAll = [gzDoc, ...gzTutorials, gzWorld, sdfTutorial]
@@ -118,6 +134,7 @@ async function getGzWorldLinks({
   repo,
   branch,
   relativePath,
+  branch_name_override,
 }: {
   cacheDir: string
   repoUrl: string
@@ -125,6 +142,7 @@ async function getGzWorldLinks({
   repo: string
   branch: string
   relativePath: string
+  branch_name_override?: string
 }) {
   const gzWorlds: GazeboRepoDocs = {
     org,
@@ -159,10 +177,11 @@ async function getGzWorldLinks({
       gzWorlds.errors.push(`Skipping '${file}' since it is not an SDF file`)
       return
     }
+    const urlBranch = branch_name_override? branch_name_override : branch
     const doc: GazeboDoc = {
       localPath: filePath,
       handle: file,
-      sourceUrl: `https://github.com/${org}/${repo}/tree/${branch}/${relativePath}/${file}`,
+      sourceUrl: `https://github.com/${org}/${repo}/tree/${urlBranch}/${relativePath}/${file}`,
     }
     gzWorlds.docs.push(doc)
   })
@@ -194,37 +213,33 @@ async function getGzDocRepoLinks({
     gzDoc.errors.push(errorMessage)
     return gzDoc
   }
-
-  const docsPath = join(gzDoc.localPath, releaseName)
-  let files: string[] = []
-  try {
-    files = fs.readdirSync(docsPath)
-  } catch (_: unknown) {
-    gzDoc.errors.push(`Could not read the ${releaseName} directory`)
-  }
-
-  files.forEach((file) => {
+  function parsePage(docsPath: string, page: GazeboDocIndexPage, versioned_page: boolean = true) {
+    console.error("Parsing", page.file)
+    const file = page.file
     const filePath = join(docsPath, file)
-    if (fs.statSync(filePath).isDirectory()) {
-      return
-    } else if (!file.endsWith('.md')) {
-      gzDoc.errors.push(`Skipping '${file}' since it is not a markdown file`)
-      return
-    }
-    const fileNoExt = file.replace('.md', '')
-    const relativePath = join(releaseName, file)
-    const relativePathNoExt = join(releaseName, fileNoExt)
-    const liveUrl = `https://gazebosim.org/docs/${relativePathNoExt}`
-    const sourceUrl = `https://github.com/${org}/${repo}/tree/${branch}/${relativePath}`
+    const liveUrl = `https://gazebosim.org/docs/${releaseName}/${page.name}`
+    const urlRelPath = versioned_page ? `${releaseName}/${file}` : file
+    const sourceUrl = `https://github.com/${org}/${repo}/tree/${branch}/${urlRelPath}`
     const doc: GazeboDoc = {
       localPath: filePath,
-      handle: fileNoExt,
+      handle: page.name,
       liveUrl,
       sourceUrl,
     }
     gzDoc.docs.push(doc)
-  })
+    if (page.children != undefined)
+      page.children.forEach((page) => {parsePage(docsPath, page)})
+  }
 
+  const docsPath = join(gzDoc.localPath)
+  const topIndexPath = join(gzDoc.localPath, 'index.yaml')
+  const topIndex = yaml.load(fs.readFileSync(topIndexPath, 'utf8')) as GazeboDocIndex
+  topIndex['pages'].forEach((page) => { parsePage(docsPath, page, false) })
+
+  const releaseDocsPath = join(gzDoc.localPath, releaseName)
+  const releaseTopIndexPath = join(releaseDocsPath, 'index.yaml')
+  const releaseTopIndex = yaml.load(fs.readFileSync(releaseTopIndexPath, 'utf8')) as GazeboDocIndex
+  releaseTopIndex['pages'].forEach((page) => { parsePage(releaseDocsPath, page) })
   return gzDoc
 }
 
@@ -233,8 +248,10 @@ async function getGzTutorialLinks({
   reposYamlUrl,
   reposToSkip = [],
   tutorialsDirectory = 'tutorials',
+  branch_name_overrides = {},
 }: GzTutorialRepos & {cacheDir: string}) {
   const reposYamlPath = join(cacheDir, 'repos.yaml')
+  console.error("Downloading", reposYamlUrl)
   await ros2.cache.downloadFile({
     url: reposYamlUrl,
     path: reposYamlPath,
@@ -249,7 +266,6 @@ async function getGzTutorialLinks({
       org: repo.org,
       repo: repo.name,
       branch: repo.version,
-      majorVersion: getNumber(repo.version),
       localPath: join(cacheDir, repo.org, repo.name),
       docs: [],
       errors: [],
@@ -264,6 +280,13 @@ async function getGzTutorialLinks({
       gzRepo.errors.push(errorMessage)
     }
 
+    const urlBranch = branch_name_overrides[repo.name] ?? repo.version
+    // Determine the major version number from the package.xml
+    const parser = new XMLParser()
+    const package_xml_path = join(gzRepo.localPath, "package.xml")
+    const pkg = parser.parse(fs.readFileSync(package_xml_path, 'utf8'))
+    gzRepo.majorVersion = pkg.package.version.split(".")[0]
+
     const gzWebsiteRef = repo.name.replace(/gz-/, '').replace(/-/, '_')
     const readmePath = join(gzRepo.localPath, 'README.md')
     if (fs.existsSync(readmePath)) {
@@ -271,7 +294,7 @@ async function getGzTutorialLinks({
         localPath: readmePath,
         handle: 'README',
         liveUrl: `https://gazebosim.org/libs/${gzWebsiteRef}`,
-        sourceUrl: `https://github.com/${gzRepo.org}/${gzRepo.repo}/blob/${gzRepo.branch}/README.md`,
+        sourceUrl: `https://github.com/${gzRepo.org}/${gzRepo.repo}/blob/${urlBranch}/README.md`,
       }
       gzRepo.docs.push(readmeDoc)
     }
@@ -305,7 +328,7 @@ async function getGzTutorialLinks({
       const matchHeading = fileText.match(/#\s+([A-Za-z0-9-_+: "]+)/)
       const title = match[2] || (matchHeading && matchHeading[1]) || handle
       const liveUrl = `https://gazebosim.org/api/${gzWebsiteRef}/${gzRepo.majorVersion}/${handle}.html`
-      const sourceUrl = `https://github.com/${gzRepo.org}/${gzRepo.repo}/tree/${gzRepo.branch}/${relativePath}`
+      const sourceUrl = `https://github.com/${gzRepo.org}/${gzRepo.repo}/tree/${urlBranch}/${relativePath}`
       const doc: GazeboDoc = {
         localPath: filePath,
         handle: title,
@@ -403,7 +426,6 @@ async function cloneRepo({
       destinationPath,
       version: branch,
     })
-    console.log(pullMessage)
   } catch (error) {
     let errorMessage = `Could not pull the repo: ${repoUrl}`
     if (error instanceof Error) {
@@ -414,40 +436,84 @@ async function cloneRepo({
 }
 
 async function main() {
-  const {errorText} = await getGazeboLinks({
-    cacheDir: '.cache',
-    gzDocsRepo: {
-      url: 'https://github.com/gazebosim/docs',
-      org: 'gazebosim',
-      name: 'docs',
-      branch: 'master',
-      releaseName: 'garden',
-    },
-    gzWorldRepo: {
-      url: 'https://github.com/gazebosim/gz-sim',
-      org: 'gazebosim',
-      name: 'gz-sim',
-      branch: 'gz-sim7',
-      pathToWoldFiles: 'examples/worlds',
-    },
-    gzTutorialRepos: {
-      reposYamlUrl:
-        'https://raw.githubusercontent.com/ignition-tooling/gazebodistro/master/collection-garden.yaml',
-      reposToSkip: ['gz-cmake', 'sdf_tutorials'],
-      tutorialsDirectory: 'tutorials',
-    },
-    sdfTutorialRepo: {
-      url: 'https://github.com/gazebosim/sdf_tutorials',
-      relativePathToManifest: 'manifest.xml',
-      org: 'gazebosim',
-      name: 'sdf_tutorials',
-      branch: 'master',
-      handlesToSkip: /(proposal|roadmap|usd|bindings)/,
-    },
-  })
-  if (errorText) {
-    console.error(errorText)
+  // const gzDoc = await getGzDocRepoLinks({
+  //   cacheDir: '.cache',
+  //   url: 'https://github.com/gazebosim/docs',
+  //   releaseName: 'jetty',
+  //   org: 'gazebosim',
+  //   name: 'docs',
+  //   branch: 'master'
+  // })
+  //
+  // const gzWorldRepo = {
+  //   url: 'https://github.com/gazebosim/gz-sim',
+  //   org: 'gazebosim',
+  //   name: 'gz-sim',
+  //   branch: 'main',
+  //   pathToWoldFiles: 'examples/worlds',
+  //   branch_name_override: 'gz-sim10'
+  // }
+  // const gzWorlds = await getGzWorldLinks({
+  //   cacheDir: '.cache',
+  //   repoUrl: gzWorldRepo.url,
+  //   branch: gzWorldRepo.branch,
+  //   org: gzWorldRepo.org,
+  //   repo: gzWorldRepo.name,
+  //   relativePath: gzWorldRepo.pathToWoldFiles,
+  //   branch_name_override: gzWorldRepo.branch_name_override
+  // })
+  // console.log(JSON.stringify(gzWorlds), null, 2)
+
+  const RELEASE_NAME = "jetty"
+  const gzTutorialRepos = {
+    reposYamlUrl:`https://raw.githubusercontent.com/gazebo-tooling/gazebodistro/master/collection-${RELEASE_NAME}.yaml`,
+    reposToSkip: ['gz-cmake', 'gz-tools', 'gz-utils', 'sdformat', 'gz-math', 'gz-transport', 'gz-rendering', 'gz-sensors', 'gz-gui', 'gz-plugin', 'gz-msgs'],
+    tutorialsDirectory: 'tutorials',
+    branch_name_overrides: {'gz-sim': 'gz-sim10', 'gz-launch': 'gz-launch10'}
   }
+  const gzTutorials = await getGzTutorialLinks({
+    cacheDir: '.cache',
+    reposYamlUrl: gzTutorialRepos.reposYamlUrl,
+    reposToSkip: gzTutorialRepos.reposToSkip,
+    tutorialsDirectory: gzTutorialRepos.tutorialsDirectory,
+    branch_name_overrides: gzTutorialRepos.branch_name_overrides
+  })
+  console.log(JSON.stringify(gzTutorials), null, 2)
+
+  // const {errorText} = await getGazeboLinks({
+  //   cacheDir: '.cache',
+  //   gzDocsRepo: {
+  //     url: 'https://github.com/gazebosim/docs',
+  //     org: 'gazebosim',
+  //     name: 'docs',
+  //     branch: 'master',
+  //     releaseName: 'garden',
+  //   },
+  //   gzWorldRepo: {
+  //     url: 'https://github.com/gazebosim/gz-sim',
+  //     org: 'gazebosim',
+  //     name: 'gz-sim',
+  //     branch: 'gz-sim7',
+  //     pathToWoldFiles: 'examples/worlds',
+  //   },
+  //   gzTutorialRepos: {
+  //     reposYamlUrl:
+  //       'https://raw.githubusercontent.com/ignition-tooling/gazebodistro/master/collection-garden.yaml',
+  //     reposToSkip: ['gz-cmake', 'sdf_tutorials'],
+  //     tutorialsDirectory: 'tutorials',
+  //   },
+  //   sdfTutorialRepo: {
+  //     url: 'https://github.com/gazebosim/sdf_tutorials',
+  //     relativePathToManifest: 'manifest.xml',
+  //     org: 'gazebosim',
+  //     name: 'sdf_tutorials',
+  //     branch: 'master',
+  //     handlesToSkip: /(proposal|roadmap|usd|bindings)/,
+  //   },
+  // })
+  // if (errorText) {
+  //   console.error(errorText)
+  // }
 }
 
 if (typeof require !== 'undefined' && require.main === module) {

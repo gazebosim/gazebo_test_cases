@@ -2,16 +2,19 @@ import endent from 'endent'
 import fs from 'fs'
 import yaml from 'js-yaml'
 import {join} from 'path'
-import {validateRequirementsYaml} from '../../src/requirements/generator/utils'
-import type Link from '../../src/requirements/__types__/Link'
-import type Requirement from '../../src/requirements/__types__/Requirement'
+// import {validateRequirementsYaml} from '../../src/requirements/generator/utils'
+import type Link from './__types__/Link'
+import type Requirement from './__types__/Requirement'
 import {getGazeboLinks} from './get-gazebo-links'
 import type GazeboRepoDocs from './__types__/GazeboRepoDocs'
+
+
+const RELEASE_NAME = "jetty"
 
 async function main() {
   const outputFile = join(__dirname, 'gazebo-doc-requirements.yaml')
   const errorLogFile = join(__dirname, 'gazebo-doc-requirements-errors.txt')
-  const commonLabelForRequirements = 'garden'
+  const commonLabelForRequirements = RELEASE_NAME
 
   const {repoDocs, errorText} = await getGazeboLinks({
     cacheDir: '.cache',
@@ -20,20 +23,22 @@ async function main() {
       org: 'gazebosim',
       name: 'docs',
       branch: 'master',
-      releaseName: 'garden',
+      releaseName: RELEASE_NAME,
     },
     gzWorldRepo: {
       url: 'https://github.com/gazebosim/gz-sim',
       org: 'gazebosim',
       name: 'gz-sim',
-      branch: 'gz-sim7',
+      branch: 'main',
       pathToWoldFiles: 'examples/worlds',
+      branch_name_override: 'gz-sim10'
     },
     gzTutorialRepos: {
       reposYamlUrl:
-        'https://raw.githubusercontent.com/ignition-tooling/gazebodistro/master/collection-garden.yaml',
-      reposToSkip: ['gz-cmake'],
+        `https://raw.githubusercontent.com/gazebo-tooling/gazebodistro/master/collection-${RELEASE_NAME}.yaml`,
+      reposToSkip: ['gz-cmake', 'gz-tools', 'gz-utils', 'sdformat'],
       tutorialsDirectory: 'tutorials',
+      branch_name_overrides: {'gz-sim': 'gz-sim10', 'gz-launch': 'gz-launch9'}
     },
     sdfTutorialRepo: {
       url: 'https://github.com/gazebosim/sdf_tutorials',
@@ -86,16 +91,29 @@ function repoDocsToRequirementsYaml(
       }
       const req: Requirement = {
         name: `${repoDoc.repo}: ${doc.handle}`,
-        links,
-        checks: [
+        description: '',
+        steps: [
           {
             name: 'Instructions work',
+            description: 'If the tutorial is an .sdf file, please open the file and read the comments at the top of the file.',
+            action: [],
+            expect: []
           },
           {
             name: 'Images (if there are any) match the result',
+            description: 'If the tutorial is an .sdf file, pose a screenshot of the simulation run.',
+            action: [],
+            expect: []
           },
+          {
+            name: 'Comment status',
+            description: "Include a special comment at the end of your post to indicate pass/fail. Use either `[status: passed]` or `[status: failed]`.",
+            action: [],
+            expect: []
+          }
         ],
         labels,
+        links,
       }
       requirements.push(req)
     })
@@ -103,7 +121,7 @@ function repoDocsToRequirementsYaml(
   const requirements_ = {
     requirements,
   }
-  validateRequirementsYaml(requirements_)
+  // validateRequirementsYaml(requirements_)
   return yaml.dump(requirements_)
 }
 
